@@ -25,7 +25,7 @@
 &kp LWIN &kp ESC   &kp Q          &kp W    &kp E         &kp R         &kp T      &kp Y     &kp U    &kp I     &kp O    &kp P       &kp BSPC &kp RWIN
          &kp TAB   &kp A          &kp S    &kp D         &kp F         &kp G      &kp H     &kp J    &kp K     &kp L    &kp SEMI    &kp DEL  
          &kp LCTRL &kp Z          &kp X    &kp C         &kp V         &kp B      &kp N     &kp M    &kp COMMA &kp DOT  &kp SLASH   &kp RET  
-         &mo NUM   &kp SPACE      &mo NAV    &kp BSPC         &kp LSFT      &kp RET  
+         &mo NUM   &kp SPACE      &mo NAV    &kp BSPC         &kp LSFT      &kp RET
                         >;
                 };
                 nav_layer {
@@ -33,7 +33,7 @@
 &kp LWIN &kp ESC   &kp PG_UP      &kp HOME &kp UP        &kp END       &kp ESC    &kp F1    &kp F2   &kp F3    &kp F4   &bootloader &kp BSPC &kp RWIN
          &kp TAB   &kp PG_DN      &kp LEFT &kp DOWN      &kp RIGHT     &kp RET    &kp F5    &kp F6   &kp F7    &kp F8   &trans      &kp DEL  
          &kp LCTRL &sk LWIN       &sk LALT &sk LCTL      &sk LSFT      &kp TAB    &kp F9    &kp F10  &kp F11   &kp F12  &trans      &kp RET  
-         &trans    &trans         &trans   &trans        &trans        &trans   
+         &trans    &trans         &trans   &trans        &trans        &trans
                         >;
                 };
 
@@ -42,7 +42,7 @@
 &kp LWIN &kp ESC   &kp KP_DIVIDE  &kp N7   &kp N8        &kp N9        &kp MINUS  &kp EXCL  &kp AT   &kp HASH  &kp DLLR &kp PRCNT   &kp BSPC &kp RWIN
          &kp TAB   &kp KP_ASTERIX &kp N4   &kp N5        &kp N6        &kp EQUAL  &kp CARET &kp AMPS &kp STAR  &kp LPAR &kp RPA     &kp DEL  
          &kp LCTRL &kp N0         &kp N1   &kp N2        &kp N3        &kp KP_DOT &kp GRAVE &kp SQT  &kp LBKT  &kp RBKT &kp BSLH    &kp RET  
-         &trans    &trans         &trans   &kp RC(MINUS) &kp RC(EQUAL) &trans    
+         &trans    &trans         &trans   &kp RC(MINUS) &kp RC(EQUAL) &trans 
                         >;
                 };
         };
