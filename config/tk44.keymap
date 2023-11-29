@@ -15,8 +15,8 @@
 #define ADJ 3
 
 #define DEF 0
-#define NAV 1
-#define NUM 2
+#define NUM 1
+#define NAV 2
 
 &lt { quick-tap-ms = <200>; };
 &mt { quick-tap-ms = <200>; };
@@ -37,10 +37,10 @@
                 lower_layer {
 
                         bindings = <
-   &trans &kp UNDER      &kp F1   &kp F2 &kp F3   &kp F4   &kp F5           &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11 &mt RGUI F12
-          &mt LCTRL PLUS &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &mt RCTRL MINUS
-          &mt LALT EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &trans
-                                              &lt ADJ TAB &trans &trans   &trans &trans &lt ADJ DEL
+&kp LWIN &kp ESC   &kp KP_DIVIDE  &kp N7   &kp N8        &kp N9        &kp MINUS  &kp EXCL  &kp AT   &kp HASH  &kp DLLR &kp PRCNT   &kp BSPC &kp RWIN
+         &kp TAB   &kp KP_ASTERIX &kp N4   &kp N5        &kp N6        &kp EQUAL  &kp CARET &kp AMPS &kp STAR  &kp LPAR &kp RPA     &kp DEL  
+         &kp LCTRL &kp N0         &kp N1   &kp N2        &kp N3        &kp KP_DOT &kp GRAVE &kp SQT  &kp LBKT  &kp RBKT &kp BSLH    &kp RET  
+         &trans    &trans         &trans   &kp RC(MINUS) &kp RC(EQUAL) &trans  
                         >;
                 };
 
