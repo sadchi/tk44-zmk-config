@@ -33,7 +33,7 @@
                 
                 COMBO(1, &kp &kp ESC, 4 5)
                 COMBO(2, &kp &to AUX, 26 27)
-        }
+        };
   
 };
 
