@@ -17,9 +17,24 @@
 #define DEF 0
 #define NUM 1
 #define NAV 2
+#define AUX 3
 
-&lt { quick-tap-ms = <200>; };
-&mt { quick-tap-ms = <200>; };
+
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
+combos {
+  compatible = "zmk,combos";
+  
+  COMBO(1, &kp &kp ESC, 4 5)
+  COMBO(1, &kp &to AUX, 26 27)
+  
+};
 
 / {
         keymap {
@@ -51,6 +66,16 @@
          &kp TAB   &kp PG_DN       &kp LEFT &kp DOWN      &kp RIGHT     &kp RET          &kp F5    &kp F6   &kp F7    &kp F8   &trans      &kp DEL  
          &kp LCTRL &sk LWIN        &sk LALT &sk LCTL      &sk LSFT      &kp TAB          &kp F9    &kp F10  &kp F11   &kp F12  &trans      &kp RET  
          &trans    &trans          &trans   &sk LC(LS(LALT))         &trans        &trans   
+                        >;
+                };
+
+                aux_layer {
+
+                        bindings = <
+&kp LWIN &kp ESC   &trans          &trans   &trans           &trans        &trans     &trans    &trans   &trans    &trans   &trans      &kp BSPC &kp RWIN
+         &kp TAB   &kp LBKT        &kp RBKT &kp RC(MINUS)    &kp RC(EQUAL) &trans     &trans    &trans   &trans    &trans   &trans      &kp DEL  
+         &kp LCTRL &trans          &trans   &trans           &trans        &trans     &trans    &trans   &trans    &trans   &trans      &kp RET  
+         &trans    &kp SPACE       &to DEF  &to DEF          &trans        &to DEF  
                         >;
                 };
 
