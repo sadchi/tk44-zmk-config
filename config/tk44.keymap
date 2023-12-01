@@ -25,8 +25,8 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&to AUX>;
+            key-positions = <4 5>;
+            bindings = <&kp ESC>;
         };
     };
 };
