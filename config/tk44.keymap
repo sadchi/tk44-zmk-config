@@ -10,11 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0
-#define LWR 1
-#define RSE 2
-#define ADJ 3
-
-#define DEF 0
 #define NUM 1
 #define NAV 2
 #define AUX 3
@@ -30,12 +25,10 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-            bindings = <&kp ESC>;
-        };
-        COMBO(2, &to AUX,29 30)
+        COMBO(1, &kp ESC,5 6)
+        COMBO(2, &kp RET,18 19)
+        COMBO(3, &kp TAB,30 31)
+        COMBO(4, &to AUX,29 30)
     };
 };
 
@@ -75,8 +68,8 @@
                 aux_layer {
 
                         bindings = <
-&kp LWIN &kp ESC   &trans          &trans   &trans           &trans        &trans     &trans    &trans   &trans    &trans   &trans      &kp BSPC &kp RWIN
-         &kp TAB   &kp LBKT        &kp RBKT &kp RC(MINUS)    &kp RC(EQUAL) &trans     &trans    &trans   &trans    &trans   &trans      &kp DEL  
+&kp LWIN &kp ESC   &trans          &trans   &kp LBKT         &kp RBKT      &trans     &trans    &trans   &trans    &trans   &trans      &kp BSPC &kp RWIN
+         &kp TAB   &trans          &trans   &kp RC(MINUS)    &kp RC(EQUAL) &trans     &trans    &trans   &trans    &trans   &trans      &kp DEL  
          &kp LCTRL &trans          &trans   &trans           &trans        &trans     &trans    &trans   &trans    &trans   &trans      &kp RET  
          &trans    &kp SPACE       &to DEF  &to DEF          &trans        &to DEF  
                         >;
