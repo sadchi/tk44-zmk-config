@@ -28,11 +28,13 @@
     layers = <0>; \
   };
 
-/ combos {
-  compatible = "zmk,combos";
-  
-  COMBO(1, &kp &kp ESC, 4 5)
-  COMBO(1, &kp &to AUX, 26 27)
+/ {
+        combos {
+                compatible = "zmk,combos";
+                
+                COMBO(1, &kp &kp ESC, 4 5)
+                COMBO(1, &kp &to AUX, 26 27)
+        }
   
 };
 
