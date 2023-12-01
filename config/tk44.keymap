@@ -71,7 +71,7 @@
 &kp LWIN &kp ESC   &trans          &trans   &kp LBKT         &kp RBKT      &trans     &trans    &trans   &trans    &trans   &trans      &kp BSPC &kp RWIN
          &kp TAB   &trans          &trans   &kp RC(MINUS)    &kp RC(EQUAL) &trans     &trans    &trans   &trans    &trans   &trans      &kp DEL  
          &kp LCTRL &trans          &trans   &trans           &trans        &trans     &trans    &trans   &trans    &trans   &trans      &kp RET  
-         &trans    &kp SPACE       &to DEF  &to DEF          &trans        &to DEF  
+         &kp RALT    &kp SPACE       &to DEF  &to DEF          &trans        &to DEF  
                         >;
                 };
 
