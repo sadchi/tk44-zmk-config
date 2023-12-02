@@ -17,8 +17,8 @@
 
 &sk {
     release-after-ms = <5000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
+    //quick-release;
+    //delete-property/ ignore-modifiers;
 };
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
