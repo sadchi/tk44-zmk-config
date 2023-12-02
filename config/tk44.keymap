@@ -40,6 +40,7 @@
         COMBO(6,&sk LC(LALT),21 32)
         COMBO(7,&sk LS(LALT),20 33)
         COMBO(8,&sk LC(LS(LALT)),32 33)
+        COMBO(9,&sk LG(SPACE), 2 3)
     };
 };
 
