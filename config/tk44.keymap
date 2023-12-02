@@ -15,6 +15,12 @@
 #define AUX 3
 
 
+&sk {
+    release-after-ms = <5000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <50>; \
@@ -29,6 +35,11 @@
         COMBO(2, &kp RET,18 19)
         COMBO(3, &kp TAB,30 31)
         COMBO(4, &to AUX,29 30)
+        
+        COMBO(5, &sk LC(LS),20 21)
+        COMBO(6, &sk LC(LALT),21 33)
+        COMBO(7, &sk LS(LALT),20 33)
+        COMBO(8, &sk LC(LS(LALT)),32 33)
     };
 };
 
